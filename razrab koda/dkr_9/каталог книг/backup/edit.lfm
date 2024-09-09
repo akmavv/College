@@ -1,0 +1,78 @@
+object fMain: TfMain
+  Left = 1008
+  Height = 400
+  Top = 364
+  Width = 1332
+  BorderStyle = bsDialog
+  Caption = 'Каталог книг'
+  ClientHeight = 400
+  ClientWidth = 1332
+  Color = 13790314
+  DesignTimePPI = 120
+  OnClose = FormClose
+  OnCreate = FormCreate
+  Position = poDesktopCenter
+  LCLVersion = '3.2.0.0'
+  object Panel1: TPanel
+    Left = 0
+    Height = 27
+    Top = 0
+    Width = 1332
+    Align = alTop
+    ClientHeight = 27
+    ClientWidth = 1332
+    ParentBackground = False
+    TabOrder = 0
+    OnClick = Panel1Click
+    object bAdd: TSpeedButton
+      Left = 16
+      Height = 27
+      Top = 2
+      Width = 150
+      Caption = 'Добавить данные'
+      OnClick = bAddClick
+    end
+    object dEdit: TSpeedButton
+      Left = 184
+      Height = 27
+      Top = 0
+      Width = 150
+      Caption = 'Редактировать'#13#10'данные'
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Height = -13
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      OnClick = dEditClick
+      OnDblClick = dEditClick
+      ParentFont = False
+    end
+    object bDel: TSpeedButton
+      Left = 360
+      Height = 27
+      Top = 2
+      Width = 150
+      Caption = 'Удалить данные'
+      OnClick = bDelClick
+    end
+    object bSort: TSpeedButton
+      Left = 536
+      Height = 27
+      Top = 2
+      Width = 150
+      Caption = 'Сортировать список'
+      OnClick = bSortClick
+    end
+  end
+  object SG: TStringGrid
+    Left = 0
+    Height = 373
+    Top = 27
+    Width = 1332
+    Align = alClient
+    ColCount = 6
+    ColRowDragIndicatorColor = 14984102
+    FixedCols = 0
+    RowCount = 1
+    TabOrder = 1
+  end
+end

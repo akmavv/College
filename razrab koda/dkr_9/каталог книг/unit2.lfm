@@ -1,0 +1,137 @@
+object fEdit: TfEdit
+  Left = 948
+  Height = 433
+  Top = 231
+  Width = 400
+  BorderStyle = bsDialog
+  Caption = 'Редактор данных'
+  ClientHeight = 433
+  ClientWidth = 400
+  Color = 14912652
+  DesignTimePPI = 120
+  OnShow = FormShow
+  Position = poMainFormCenter
+  LCLVersion = '3.2.0.0'
+  object eName: TEdit
+    Left = 8
+    Height = 28
+    Top = 29
+    Width = 380
+    TabOrder = 0
+  end
+  object Label1: TLabel
+    Left = 8
+    Height = 20
+    Top = 2
+    Width = 175
+    Caption = 'Укажите название книги:'
+    OnClick = Label1Click
+  end
+  object Label2: TLabel
+    Left = 12
+    Height = 20
+    Top = 62
+    Width = 113
+    Caption = 'Укажите автора:'
+  end
+  object eAvtor: TEdit
+    Left = 8
+    Height = 28
+    Top = 85
+    Width = 248
+    TabOrder = 1
+  end
+  object Label3: TLabel
+    Left = 12
+    Height = 20
+    Top = 120
+    Width = 113
+    Caption = 'Выберите жанр:'
+  end
+  object CBNote: TComboBox
+    Left = 8
+    Height = 28
+    Top = 144
+    Width = 210
+    ItemHeight = 20
+    Items.Strings = (
+      'Фантастика'
+      'Фэнтези'
+      'Приключения'
+      'Мистика'
+      'Детектив'
+      'Учебная литература'
+      'Роман'
+      'Поэзия'
+      'Комикс'
+    )
+    TabOrder = 2
+  end
+  object bSave: TBitBtn
+    Left = 16
+    Height = 23
+    Top = 392
+    Width = 160
+    Caption = 'Сохранить данные'
+    Default = True
+    Kind = bkOK
+    ModalResult = 1
+    TabOrder = 3
+  end
+  object bCancel: TBitBtn
+    Left = 208
+    Height = 22
+    Top = 393
+    Width = 160
+    Cancel = True
+    Caption = 'Не сохранять '
+    Kind = bkCancel
+    ModalResult = 2
+    TabOrder = 4
+  end
+  object Label4: TLabel
+    Left = 12
+    Height = 20
+    Top = 184
+    Width = 97
+    Caption = 'Укажите ISBN:'
+  end
+  object eISBN: TEdit
+    Left = 8
+    Height = 28
+    Top = 208
+    Width = 148
+    TabOrder = 5
+    OnKeyPress = eISBNKeyPress
+  end
+  object Label5: TLabel
+    Left = 12
+    Height = 20
+    Top = 248
+    Width = 157
+    Caption = 'Укажите издательство:'
+  end
+  object eIzdat: TEdit
+    Left = 8
+    Height = 28
+    Top = 272
+    Width = 252
+    TabOrder = 6
+  end
+  object Label6: TLabel
+    Left = 8
+    Height = 20
+    Top = 312
+    Width = 205
+    Caption = 'Укажите количество страниц:'
+    OnClick = Label6Click
+  end
+  object eStran: TEdit
+    Left = 8
+    Height = 28
+    Top = 336
+    Width = 112
+    TabOrder = 7
+    OnKeyPress = eStranKeyPress
+  end
+end

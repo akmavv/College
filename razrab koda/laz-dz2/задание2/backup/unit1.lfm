@@ -1,0 +1,90 @@
+object Form1: TForm1
+  Left = 262
+  Height = 425
+  Top = 212
+  Width = 580
+  Caption = 'Form1'
+  ClientHeight = 425
+  ClientWidth = 580
+  DesignTimePPI = 120
+  LCLVersion = '2.2.4.0'
+  object Label1: TLabel
+    Left = 44
+    Height = 20
+    Top = 32
+    Width = 198
+    Caption = 'Введите радиус окружности:'
+    ParentColor = False
+  end
+  object Edit1: TEdit
+    Left = 296
+    Height = 28
+    Top = 32
+    Width = 170
+    OnChange = Edit1Change
+    TabOrder = 0
+  end
+  object Edit2: TEdit
+    Left = 296
+    Height = 28
+    Top = 100
+    Width = 170
+    TabOrder = 1
+  end
+  object Edit3: TEdit
+    Left = 296
+    Height = 28
+    Top = 200
+    Width = 170
+    TabOrder = 2
+  end
+  object Edit4: TEdit
+    Left = 296
+    Height = 28
+    Top = 256
+    Width = 170
+    TabOrder = 3
+  end
+  object Label2: TLabel
+    Left = 44
+    Height = 40
+    Top = 88
+    Width = 192
+    Caption = 'Введите отношение сторон'#13#10'прямоугольника:'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 44
+    Height = 20
+    Top = 200
+    Width = 199
+    Caption = 'Диагональ прямоугольника:'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 44
+    Height = 40
+    Top = 250
+    Width = 192
+    Caption = 'Площадь прямоугольника, '#13#10'вписанного в окружность:'
+    ParentColor = False
+  end
+  object Button1: TButton
+    Left = 79
+    Height = 31
+    Top = 336
+    Width = 94
+    Caption = 'Вычислить'
+    OnClick = Button1Click
+    TabOrder = 4
+  end
+  object Button2: TButton
+    Left = 360
+    Height = 31
+    Top = 336
+    Width = 94
+    Caption = 'Очистить'
+    OnClick = Button2Click
+    TabOrder = 5
+  end
+end
